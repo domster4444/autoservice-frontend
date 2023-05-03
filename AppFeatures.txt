@@ -1,0 +1,11 @@
+1.) Works on offline mode.
+2.) Loads faster in offline mode.
+3.) PWA support
+4.) Google Analytics Integrated
+5.) Dockerized
+
+
+
+
+
+

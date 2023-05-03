@@ -1,0 +1,35 @@
+.dashboard-first-row--right-division {
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.55rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dashboard-first-row--right-division .left-division {
+  margin-right: 1rem;
+}
+
+.dashboard-first-row--right-division h5,
+.dashboard-first-row--right-division p {
+  color: #0f5288;
+}
+
+.dashboard-first-row--right-division .image-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.dashboard-first-row--right-division .image-container img {
+  height: 100%;
+}

@@ -1,0 +1,4 @@
+// remove default dropdown caret of bootstrap dropdown
+.dropdown-toggle::after {
+  display: none;
+}

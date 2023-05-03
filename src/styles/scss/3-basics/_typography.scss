@@ -1,0 +1,26 @@
+// Roboto Regular
+
+.roboto_regular_base {
+  font-family: "Roboto", sans-serif;
+}
+.roboto_light {
+  @extend .roboto_regular_base;
+  font-weight: 300;
+}
+.roboto_regular {
+  @extend .roboto_regular_base;
+  font-weight: 400;
+}
+.roboto_medium {
+  @extend .roboto_regular_base;
+  font-weight: 500;
+}
+.roboto_bold {
+  @extend .roboto_regular_base;
+  font-weight: 700;
+}
+
+* {
+  @extend .roboto_regular_base;
+  font-weight: 400;
+}

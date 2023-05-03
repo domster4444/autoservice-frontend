@@ -1,0 +1,18 @@
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.animate-float {
+  animation-name: float;
+  animation-duration: 3.8s;
+  animation-iteration-count: infinite;
+  transition: all 3.8s;
+}

@@ -1,0 +1,32 @@
+.verification-badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+}
+
+.badge-verified {
+  background-color: #28a745;
+}
+
+.badge-unverified {
+  background-color: #dc3545;
+}
+
+.badge-paid {
+  background-color: #007bff !important;
+}
+
+.badge-working {
+  background-color: #f5b301 !important;
+}
+
+.badge-waiting {
+  background-color: #6c757d !important;
+}
+
+.badge-customer-out-of-reach {
+  background-color: #dc3545 !important;
+}
+
+.badge-completed {
+  background-color: #28a745 !important;
+}

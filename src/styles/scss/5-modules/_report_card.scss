@@ -1,0 +1,17 @@
+.report-logo-img {
+  height: 4rem;
+  transition: all ease-in-out 200ms;
+}
+.download-report-card {
+  padding: 1rem;
+  border-radius: 1.5rem;
+  transition: all ease-in-out 300ms;
+}
+
+.download-report-card:hover {
+  transition: all ease-in-out 300ms;
+}
+
+.download-report-card:hover .report-logo-img {
+  transform: translateY(-0.8rem) scale(1.1);
+}

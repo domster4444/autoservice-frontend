@@ -1,0 +1,94 @@
+.chatPage {
+  margin-top: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chatPage,
+.chatContainer {
+  border-radius: 1rem;
+}
+.chatPage .chatContainer {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlK7304n07gOe0tQ1MeZ8OiN7oKiCfiiFHDG1gAY4pUf5v7WCb4XYHJw8aq72HNYiyflA&usqp=CAU");
+  border: 2px dashed #e6e6e6;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+.inputBox {
+  width: 100%;
+  border: 0.1vmax solid #e6e6e6;
+  box-sizing: border-box;
+  border-radius: 0.55rem;
+  overflow: hidden;
+}
+
+#chatInput {
+  font-size: 1rem;
+  height: 3rem;
+  padding: 0 1rem;
+  width: 80%;
+  border: none;
+  background-color: var(--primary-white);
+}
+
+.sendBtn {
+  height: 3rem;
+  width: 20%;
+  border: none;
+  background-color: var(--primary-blue);
+  color: var(--primary-white);
+  font-weight: bold;
+}
+
+.chatBox {
+  width: 100%;
+  overflow-y: scroll;
+}
+.chatBox {
+  height: 30rem;
+  width: 100%;
+  overflow-y: scroll;
+  margin-bottom: 1rem;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0f5288;
+}
+
+.message__box {
+  width: 50%;
+  padding: 1vmax;
+  margin: 1.8vmax;
+  border-radius: 0.5vmax;
+  display: inline-block;
+  clear: both;
+}
+
+.right {
+  float: right;
+  background: var(--primary-blue) !important;
+  color: var(--primary-white);
+}
+.left {
+  float: left;
+  background: #efeeed !important;
+  color: var(--primary-black);
+}

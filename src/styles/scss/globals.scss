@@ -1,0 +1,246 @@
+//?1-HELPERS
+@import "1-helpers/functions";
+@import "1-helpers/mixins.";
+@import "1-helpers/variables";
+
+//?2-TOOLS
+// @import '2-tools/animate';
+// @import "2-tools/breakpoint";
+// @import "2-tools/swiper";
+// @import '2-tools/flickity';
+// @import '2-tools/hint';
+// @import '2-tools/hover';
+// @import '2-tools/normalize';
+
+//?3-BASICS
+
+@import "3-basics/base";
+@import "3-basics/custom_animations";
+@import "3-basics/keyframe";
+// @import "3-basics/global";
+// @import '3-basics/links';
+// @import '3-basics/responsive_mixin';
+// @import '3-basics/selection-colors';
+@import "3-basics/typography";
+
+//?4-LAYOUT   SHARED BIG COMPONENTS
+// @import "4-layout/footer";
+
+//? 5-MODULES
+@import "5-modules/chat";
+@import "5-modules/menuDropdown";
+@import "5-modules/spinner";
+@import "5-modules/featured-leaf";
+@import "5-modules/vehicle-card";
+@import "5-modules/mechanic_card";
+@import "5-modules/report_card";
+@import "5-modules/create_form";
+@import "5-modules/listTable";
+@import "5-modules/verification_badge";
+@import "5-modules/chat_room";
+
+//? 5-PAGES
+// @import "6-pages/404";
+
+// ========================== GLOBAL STYLING STARTS HERE
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  outline: none;
+}
+
+// ================== Dashboard layouts styling
+
+.db-body-bg,
+body {
+  background-color: var(--primary-db-bg);
+}
+
+#dashboard-aside {
+  border-radius: 1rem;
+  background-color: var(--primary-white);
+  @media (max-width: 1000px) {
+    display: none !important;
+  }
+}
+
+#dashboard-body {
+  min-height: 90vh;
+  width: 100%;
+  background-color: var(--primary-white);
+  @media (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+// ======================== breadcrumb styling
+
+ul.breadcrumb {
+  width: fit-content;
+}
+ul.breadcrumb li {
+  font-size: 1.125rem;
+}
+ul.breadcrumb li + li:before {
+  padding: 0.5rem;
+  color: rgb(192, 192, 192);
+  content: "/\00a0";
+}
+ul.breadcrumb li a {
+  color: #0c4b7fbb;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+// =========================== toastify styling
+.Toastify__progress-bar {
+  background-color: #0f5288 !important;
+}
+.Toastify__toast-icon svg path {
+  fill: #0f5288;
+}
+
+// =============== radio
+
+/* ? ====== form  styling starts here*/
+
+[type="radio"]:checked,
+[type="radio"]:not(:checked) {
+  position: absolute;
+  left: -624.9375rem;
+}
+[type="radio"]:checked + label,
+[type="radio"]:not(:checked) + label {
+  position: relative;
+  padding-left: 1.75rem;
+  cursor: pointer;
+  line-height: 1.25rem;
+  display: inline-block;
+  color: #666;
+}
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.125rem;
+  height: 1.125rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 100%;
+  background: #fff;
+}
+[type="radio"]:checked + label:after,
+[type="radio"]:not(:checked) + label:after {
+  content: "";
+  width: 0.75rem;
+  height: 0.75rem;
+  background: #0c4c7f;
+  position: absolute;
+  top: 0.1875rem;
+  left: 0.1875rem;
+  border-radius: 100%;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+[type="radio"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.blue-leaf i {
+  font-size: 1.5rem;
+}
+.blue-leaf {
+  top: -1rem;
+  left: -1rem;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0rem 0.625rem 1.875rem 0rem rgba(44, 130, 237, 0.4);
+  background-image: linear-gradient(40deg, var(--primary-blue) 0%, var(--primary-blue) 100%);
+}
+@media only screen and (max-width: 600px) {
+  .blue-leaf {
+    display: none !important;
+  }
+}
+.text-dark-blue {
+  color: var(--primary-blue);
+}
+
+#visitor-form input:active,
+#visitor-form input:focus,
+#visitor-form select:active,
+#visitor-form select:focus,
+#visitor-form textarea:active,
+#visitor-form textarea:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+#visitor-form input,
+#visitor-form select,
+#visitor-form textarea {
+  border-left: 2px solid transparent !important;
+  border-right: 2px solid transparent !important;
+  border-top: 2px solid transparent !important;
+  border-bottom: 2px solid #ced4da !important;
+  border-radius: 0rem;
+}
+#visitor-form input:focus,
+#visitor-form select:focus,
+#visitor-form textarea:focus {
+  border-bottom: 2px solid var(--primary-blue) !important;
+  outline: none;
+}
+
+.rounded-65 {
+  border-radius: 0.65rem;
+}
+.btstrp-shadow-effect:active {
+  transition: all ease-in-out 0ms;
+  box-shadow: 0rem 0rem 0.125rem 0.3125rem #c9d6f9 !important;
+}
+
+.blue-bg {
+  background-color: var(--primary-blue) !important;
+}
+/* ? ====== form  styling   ends here*/
+
+// === react boostrap modal footer styling
+.modal-footer {
+  border-top: none;
+  margin: 0;
+}
+
+.modal-dialog {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+// user list avatar image size
+a.avatar {
+  height: 3rem;
+  margin: 1rem 0rem;
+}

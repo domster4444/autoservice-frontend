@@ -1,0 +1,16 @@
+{
+  "loginPage": {
+    "Blabla": "Bla bla",
+    "upperSectionName": {
+      "title": "This is a title",
+      "subTitle": "This is a sub title"
+    }
+  },
+  "forgotPage": {
+    "Blabla": "Bla bla",
+    "upperSectionName": {
+      "title": "This is a title",
+      "subTitle": "This is a sub title"
+    }
+  }
+}

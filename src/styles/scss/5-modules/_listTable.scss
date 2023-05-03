@@ -1,0 +1,48 @@
+.table-shadow-wrapper > div:nth-child(2) {
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.react-bootstrap-table table {
+  cursor: pointer;
+  background: white;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 0.75rem;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.react-bootstrap-table table tr {
+  padding: 1rem !important;
+}
+
+.react-bootstrap-table table tr:hover {
+  background-color: #f8f8f8;
+}
+
+.rdt_TableHeadRow {
+  background-color: #1463a3 !important;
+  border-radius: 0.4rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+}
+
+div.rdt_TableRow {
+  border-left: 2px solid transparent !important;
+  font-size: 1rem;
+}
+
+div.rdt_TableRow:hover {
+  border-left: 2px solid #5699d1 !important;
+}
+
+.filter-text {
+  border-bottom: 3px solid #0f5288 !important;
+}
+
+.data-table-extensions-filter .icon {
+  background-size: 1.5rem;
+}

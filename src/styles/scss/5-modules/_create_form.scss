@@ -1,0 +1,50 @@
+#visitor-form input:active,
+#visitor-form input:focus,
+#visitor-form select:active,
+#visitor-form select:focus,
+#visitor-form textarea:active,
+#visitor-form textarea:focus {
+  box-shadow: none !important;
+  outline: 0px !important;
+}
+
+#visitor-form input,
+#visitor-form select,
+#visitor-form textarea {
+  border-left: 2px solid transparent !important;
+  border-right: 2px solid transparent !important;
+  border-top: 2px solid transparent !important;
+  border-bottom: 2px solid #ced4da !important;
+  border-radius: 0rem;
+}
+#visitor-form input:focus,
+#visitor-form select:focus,
+#visitor-form textarea:focus {
+  border-bottom: 2px solid var(--primary-blue) !important;
+  outline: none;
+}
+
+.contract-user-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.contract-user-container .right-division {
+  width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .contract-user-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .contract-user-container .left-division .contract-container {
+    width: 100%;
+  }
+}
